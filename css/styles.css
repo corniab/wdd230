@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Proza+Libre&display=swap");
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: #1a1f23;
+}
+
+body {
+  color: #fcfcfc;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+h1,
+h2 {
+  font-family: "Proza Libre", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #33a64b;
+  opacity: 0.9;
+  height: 120px;
+  box-shadow: 5px 5px 20px #111517;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+img {
+  margin: 4rem 2rem 0 0;
+  width: 150px;
+  border-radius: 75px;
+}
+
+section {
+  margin: 0 auto;
+  opacity: 0.9;
+  margin-top: 3.5rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px #111517;
+  padding: 1rem;
+  background-color: #33a64b;
+  width: min(85%, 70rem);
+}
+
+h2 {
+  /*top right bottom left*/
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.border {
+  border-top: solid #fcfcfc 3px;
+  width: min(100%, 50rem);
+  opacity: 0.8;
+}
+
+ul {
+  margin: 1.5rem 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer {
+  line-height: 0;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #33a64b;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
+  opacity: 0.9;
+  box-shadow: 5px 5px 20px #111517;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.3rem;
+}
