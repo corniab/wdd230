@@ -2,9 +2,10 @@
 
 html,
 body {
-  margin: 0px;
-  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #1a1f23;
+  height: 100%;
 }
 
 body {
@@ -20,11 +21,12 @@ h2 {
 }
 
 .container {
-  margin: 0 auto;
   max-width: 760px;
-  height: 100vh;
-  position: relative;
-  padding: 0;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -34,10 +36,10 @@ header {
   background-color: #33a64b;
   opacity: 0.9;
   height: 120px;
-  box-shadow: 5px 5px 5px #111517;
   padding: 0.5rem;
   /* top-left top-right bottom-right bottom-left*/
   border-radius: 1rem;
+  box-shadow: 5px 5px 5px #111517;
 }
 
 h1 {
@@ -49,19 +51,17 @@ img {
   margin: 4rem 2rem 0 0;
   width: 150px;
   border-radius: 75px;
-  box-shadow: 1px 1px 10px black;
 }
 
 section {
-  margin: 0 auto;
+  margin: 3rem auto;
+  padding: 0.5rem;
   opacity: 0.9;
-  margin-top: 3.5rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px #111517;
   padding: 1rem;
   background-color: #33a64b;
   width: min(85%, 70rem);
-  margin-bottom: 1rem;
 }
 
 h2 {
@@ -83,18 +83,23 @@ ul {
 }
 
 footer {
-  line-height: 0;
   display: flex;
+  line-height: 0;
+  padding: 0.5rem;
   flex-flow: column wrap;
   background-color: #33a64b;
   justify-content: center;
   align-items: center;
-  padding: 0.2em;
   opacity: 0.9;
-  box-shadow: 5px 5px 5px #111517;
   font-size: 1.3rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  /* top-left top-right bottom-right bottom-left*/
   border-radius: 1rem;
+  box-shadow: 0 5px 5px 5px #111517;
+}
+
+@media only screen and (max-width: 760px) {
+  header,
+  footer {
+    border-radius: 0 0 0 0;
+  }
 }
