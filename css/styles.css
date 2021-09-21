@@ -19,6 +19,14 @@ h2 {
   font-family: "Proza Libre", sans-serif;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 760px;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -26,8 +34,10 @@ header {
   background-color: #33a64b;
   opacity: 0.9;
   height: 120px;
-  box-shadow: 5px 5px 20px #111517;
+  box-shadow: 5px 5px 5px #111517;
   padding: 0.5rem;
+  /* top-left top-right bottom-right bottom-left*/
+  border-radius: 1rem;
 }
 
 h1 {
@@ -39,6 +49,7 @@ img {
   margin: 4rem 2rem 0 0;
   width: 150px;
   border-radius: 75px;
+  box-shadow: 1px 1px 10px black;
 }
 
 section {
@@ -46,10 +57,11 @@ section {
   opacity: 0.9;
   margin-top: 3.5rem;
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px #111517;
+  box-shadow: 5px 5px 5px #111517;
   padding: 1rem;
   background-color: #33a64b;
   width: min(85%, 70rem);
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -79,9 +91,10 @@ footer {
   align-items: center;
   padding: 0.2em;
   opacity: 0.9;
-  box-shadow: 5px 5px 20px #111517;
-  position: fixed;
+  box-shadow: 5px 5px 5px #111517;
+  font-size: 1.3rem;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 1.3rem;
+  border-radius: 1rem;
 }
