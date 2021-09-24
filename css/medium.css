@@ -1,47 +1,52 @@
-@media only screen and (max-width: 760px) {
+@media screen and (min-width: 760px) {
   body {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
   }
 
   header,
   footer {
-    border-radius: 0 0 0 0;
+    border-radius: 1rem;
   }
 
   header {
-    flex-flow: column-reverse;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row-reverse;
+    justify-content: space-between;
     padding: 0.5rem;
-  }
-
-  img {
-    width: 80px;
-    border-radius: 40px;
-    margin: 0;
+    height: 120px;
   }
 
   h1 {
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 3.5rem;
+    margin-left: 2rem;
   }
 
-  h2 {
-    font-size: 1rem;
-  }
-
-  .border {
-    border-top: solid #fcfcfc 2px;
+  img {
+    margin: 4rem 2rem 0 0;
+    width: 150px;
+    border-radius: 75px;
+    padding: 0;
   }
 
   section {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    display: block;
+    width: min(75%, 70rem);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .border {
+    border-top: solid #fcfcfc 3px;
+    width: min(95%, 75rem);
+  }
+
+  ul {
+    margin: 1.5rem 0 0;
   }
 
   footer {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
