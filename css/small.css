@@ -41,6 +41,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: solid white 2px;
 }
 
 header {
