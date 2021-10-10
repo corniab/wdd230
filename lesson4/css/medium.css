@@ -1,0 +1,41 @@
+@media screen and (min-width: 37.5em) {
+  body {
+    font-size: 12pt;
+  }
+
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  header img {
+    height: 150px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    display: block;
+  }
+
+  .motto {
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+}
