@@ -6,14 +6,12 @@
 
   nav ul {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  header,
   footer,
   main {
     border-radius: 1em;
@@ -21,7 +19,7 @@
   }
 
   nav li {
-    border-radius: 1em;
+    width: 24%;
   }
 
   h1 {
