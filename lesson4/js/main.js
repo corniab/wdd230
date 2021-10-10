@@ -38,3 +38,5 @@ const toggleNav = document.querySelector('.toggle-nav');
 const mainNav = document.querySelector('.navigation')
 
 toggleNav.addEventListener('click', () => {mainNav.classList.toggle('responsive')}, false);
+
+window.onresize = () => {if (window.innerWidth > 760) mainNav.classList.remove('responsive')};
