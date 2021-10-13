@@ -28,7 +28,7 @@ let year = currentDate.getFullYear();
 let dateFinal = `${weekday}, ${monthDate} ${month} ${year}`;
   
 // Return the modified date  
-document.getElementById("lastUpdated").textContent = dateFinal;
+document.getElementById("currentDate").textContent = dateFinal;
 
 // Return the copyright year.
 document.getElementById("copyright").textContent = 
