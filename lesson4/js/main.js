@@ -1,5 +1,5 @@
 // Return the date last modified as 'Wednesday, 24 July 2020'
-let lastUpdated = new Date(document.lastModified);
+let currentDate = new Date();
 
 // Parse day of the week
 const weekdays = ["Sunday", "Monday", "Tuesday", 
@@ -7,10 +7,10 @@ const weekdays = ["Sunday", "Monday", "Tuesday",
                   "Saturday"
                 ];
 
-let weekday = weekdays[lastUpdated.getDay()];
+let weekday = weekdays[currentDate.getDay()];
 
 // Parse the day of the month
-let monthDate = lastUpdated.getDate();
+let monthDate = currentDate.getDate();
 
 // Parse the month
 const monthNames = ["January", "February", "March", 
@@ -19,10 +19,10 @@ const monthNames = ["January", "February", "March",
                     "October", "November", "December"
                   ];
 
-let month = monthNames[lastUpdated.getMonth()];
+let month = monthNames[currentDate.getMonth()];
 
 // Parse the year
-let year = lastUpdated.getFullYear();
+let year = currentDate.getFullYear();
 
 // Combine date values into one string
 let dateFinal = `${weekday}, ${monthDate} ${month} ${year}`;
