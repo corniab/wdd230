@@ -47,8 +47,15 @@
   #forecast article {
     background-color: whitesmoke;
     margin: 0.2em;
-    padding: 1em;
     font-size: 0.8em;
+  }
+
+  #forecast h3 {
+    padding: 0.5em;
+  }
+
+  .forecast-content {
+    padding: 1em;
   }
 
   #forecast article img {

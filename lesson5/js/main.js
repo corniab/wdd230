@@ -50,6 +50,19 @@ if (currentDate.getDay() == 6) {
                           
   referenceNode = document.getElementById("container")
   body.insertBefore(eventDiv,referenceNode)
-  
 
 }
+
+// Wayfinding--Show the user which page they're on.
+const navItem = document.querySelectorAll(".nav-item")
+
+let currentPage = window.location.href;
+
+
+navItem.forEach(element => {
+  if (element.href === currentPage) {
+    element.classList.add("active-nav")
+  }
+})
+
+
