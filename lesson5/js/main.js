@@ -58,11 +58,15 @@ const navItem = document.querySelectorAll(".nav-item")
 
 let currentPage = window.location.href;
 
-
+// Loop through each navItem and compare it to the current url.
+// If its a match apply the active-nav class to the element.
 navItem.forEach(element => {
   if (element.href === currentPage) {
+    console.log(element.href)
     element.classList.add("active-nav")
+  } else {
+    element.classList.remove("active-nav")
   }
-})
+});
 
 

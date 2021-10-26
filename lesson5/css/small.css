@@ -108,6 +108,7 @@ nav ul {
   background-color: whitesmoke;
   color: black;
   box-shadow: 1px 1px 5px black;
+  border-radius: 3px;
 }
 
 .responsive li {
