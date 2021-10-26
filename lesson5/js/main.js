@@ -62,7 +62,6 @@ let currentPage = window.location.href;
 // If its a match apply the active-nav class to the element.
 navItem.forEach(element => {
   if (element.href === currentPage) {
-    console.log(element.href)
     element.classList.add("active-nav")
   } else {
     element.classList.remove("active-nav")
