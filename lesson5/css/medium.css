@@ -62,8 +62,8 @@
     padding: 1em;
   }
 
-  #forecast article img {
-    float: left;
+  #forecast img {
+    height: 30px;
   }
 
   footer {
