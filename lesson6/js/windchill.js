@@ -1,4 +1,4 @@
-// Calculates and returns windchill factor.
+// Calculates and returns windchill factor for overlay.
 const temperature = parseFloat(document.getElementById("temperature").textContent);
 const windspeed = parseFloat(document.getElementById("windspeed").textContent);
 
