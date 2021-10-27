@@ -1,0 +1,1 @@
+// Calculates and returns windchill factor.

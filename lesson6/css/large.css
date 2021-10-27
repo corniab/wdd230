@@ -1,0 +1,17 @@
+@media screen and (min-width: 1500px) {
+  body {
+    font-size: 14pt;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  header img {
+    height: 200px;
+  }
+}

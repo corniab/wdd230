@@ -1,0 +1,79 @@
+@media screen and (min-width: 37.5em) {
+  body {
+    font-size: 12pt;
+  }
+
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  header img {
+    height: 150px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    display: block;
+  }
+
+  .motto {
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  #hide {
+    display: block;
+  }
+
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #forecast article {
+    background-color: whitesmoke;
+    margin: 0.2em;
+    font-size: 0.8em;
+  }
+
+  #forecast h3 {
+    padding: 0.5em;
+  }
+
+  .forecast-content {
+    padding: 1em;
+  }
+
+  #forecast img {
+    height: 30px;
+  }
+
+  footer {
+    font-size: 11pt;
+  }
+
+  .contact {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
