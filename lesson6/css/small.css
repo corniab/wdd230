@@ -175,6 +175,11 @@ footer a {
   color: black;
 }
 
+#map-image {
+  width: 200px;
+  margin: 1em;
+}
+
 .contact {
   padding: 1em;
   display: flex;
@@ -186,7 +191,7 @@ footer a {
 }
 
 .contact img {
-  height: 30px;
+  width: 30px;
 }
 
 .contact div {
