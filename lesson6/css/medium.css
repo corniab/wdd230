@@ -50,13 +50,14 @@
 
   #forecast {
     display: flex;
+    padding: 5px;
     justify-content: space-between;
   }
 
   #forecast article {
     background-color: whitesmoke;
-    margin: 0.2em;
     font-size: 0.8em;
+    margin: 10px;
   }
 
   #forecast h3 {
@@ -64,11 +65,10 @@
   }
 
   .forecast-content {
-    padding: 1em;
-  }
-
-  #forecast img {
-    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
   }
 
   /*-------------------- FOOTER --------------------*/

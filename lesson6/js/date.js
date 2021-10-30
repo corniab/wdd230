@@ -1,38 +1,22 @@
-// Return the date last modified as 'Wednesday, 24 July 2020'
-let currentDate = new Date();
+// Set format for date to display.
+const dateFormat = {weekday: "long",
+                 month: "long",
+                 day: "2-digit",
+                 year: "numeric"
 
-// Parse day of the week
-const weekdays = ["Sunday", "Monday", "Tuesday", 
-                  "Wednesday", "Thursday", "Friday", 
-                  "Saturday"
-                ];
+}
 
-let weekday = weekdays[currentDate.getDay()];
+// Create new Date object.
+const currentDate = new Date();
 
-// Parse the day of the month
-let monthDate = currentDate.getDate();
-
-// Parse the month
-const monthNames = ["January", "February", "March", 
-                    "April", "May", "June",
-                    "July", "August", "September", 
-                    "October", "November", "December"
-                  ];
-
-let month = monthNames[currentDate.getMonth()];
-
-// Parse the year
-let year = currentDate.getFullYear();
-
-// Combine date values into one string
-let dateFinal = `${weekday}, ${monthDate} ${month} ${year}`;
+// Create date string to display.
+const displayDate = currentDate.toLocaleString('en-us', dateFormat);
   
-// Return the modified date  
-document.getElementById("currentDate").textContent = dateFinal;
+// Add display date to document.
+document.getElementById("currentDate").textContent = displayDate;
 
 // Return the copyright year.
-document.getElementById("copyright").textContent = 
-  new Date().getFullYear();
+document.getElementById("copyright").textContent = currentDate.getFullYear();
 
 // Add banner at top of page if its Saturday.
 if (currentDate.getDay() == 6) {
@@ -46,3 +30,20 @@ if (currentDate.getDay() == 6) {
     body.insertBefore(eventDiv,referenceNode)
   
   }
+
+// Add current date to forecast articles
+const forecastDay = document.querySelectorAll(".forecast-day");
+
+// Create list of weekdays.
+const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+let dayNumber = currentDate.getDay()
+
+forecastDay.forEach(day => {
+  console.log(dayNumber)
+  dayNumber += 1
+  day.textContent = dayName[dayNumber]
+  if (dayNumber == 6) {
+    dayNumber = -1;
+  };
+});
