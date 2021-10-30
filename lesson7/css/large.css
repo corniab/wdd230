@@ -1,0 +1,27 @@
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 14pt;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  h2 {
+    font-size: 28pt;
+  }
+
+  header img {
+    height: 200px;
+  }
+
+  /*-------------------- GALLERY --------------------*/
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #gallery-main {
+    text-align: left;
+  }
+}
