@@ -123,7 +123,7 @@ nav ul {
 
 /*------------- MAIN --------------------*/
 main {
-  width: min(90%, 60rem);
+  width: min(90%, 50em);
   margin: 1em;
   display: flex;
   flex-direction: column;

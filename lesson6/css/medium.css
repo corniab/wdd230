@@ -1,8 +1,10 @@
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 625px) {
+  /*-------------------- BODY --------------------*/
   body {
     font-size: 12pt;
   }
 
+  /*-------------------- HEADINGS --------------------*/
   h1 {
     font-size: 36pt;
   }
@@ -11,6 +13,7 @@
     font-size: 24pt;
   }
 
+  /*-------------------- HEADER --------------------*/
   header img {
     height: 150px;
   }
@@ -27,6 +30,7 @@
     text-align: center;
   }
 
+  /*-------------------- NAVIGATION --------------------*/
   .navigation {
     display: flex;
   }
@@ -39,6 +43,7 @@
     display: none;
   }
 
+  /*-------------------- FORECAST --------------------*/
   #hide {
     display: block;
   }
@@ -66,14 +71,16 @@
     height: 30px;
   }
 
+  /*-------------------- FOOTER --------------------*/
   footer {
     font-size: 11pt;
   }
 
   .contact {
+    width: 90%;
     padding: 1em;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-flow: wrap;
+    justify-content: center;
   }
 }
