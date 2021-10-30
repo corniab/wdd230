@@ -40,10 +40,10 @@ const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
 let dayNumber = currentDate.getDay()
 
 forecastDay.forEach(day => {
-  console.log(dayNumber)
-  dayNumber += 1
-  day.textContent = dayName[dayNumber]
   if (dayNumber == 6) {
     dayNumber = -1;
   };
+  dayNumber += 1
+  day.textContent = dayName[dayNumber]
+
 });

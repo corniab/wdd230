@@ -38,10 +38,16 @@
         <section id="hero">
           <!-- <img src="images/hero-img.jpg" alt="hero image" /> -->
           <picture>
-            <source media="(max-width: 425px" srcset="images/hero-img400.jpg" />
-            <source media="(max-width: 625px" srcset="images/hero-img600.jpg" />
             <source
-              media="(max-width: 1000px"
+              media="(max-width: 425px)"
+              srcset="images/hero-img400.jpg"
+            />
+            <source
+              media="(max-width: 625px)"
+              srcset="images/hero-img600.jpg"
+            />
+            <source
+              media="(max-width: 1000px)"
               srcset="images/hero-img1000.jpg"
             />
             <img src="images/hero-img1000.jpg" alt="hero image" />
