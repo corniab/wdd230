@@ -43,6 +43,18 @@
     display: none;
   }
 
+  /*-------------------- MAIN --------------------*/
+  #hero {
+    position: relative;
+  }
+
+  .weather-summary {
+    margin: 0;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+  }
+
   /*-------------------- FORECAST --------------------*/
   #hide {
     display: block;
