@@ -15,7 +15,7 @@ function preloadImage(img) {
 // Declare the options that will be passed into the InstersectionObserver instance.
 const options = {
     threshold: 1,
-    rootMargin: "0px 0px 100px 0px"
+    rootMargin: "0px 0px 500px 0px"
 };
 
 // Create an instance of IntersectionObserver

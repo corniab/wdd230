@@ -62,9 +62,10 @@
     gap: 1em;
   }
 
-  #gallery-main h2 {
-    padding: 0.5em;
+  #gallery img {
+    width: 100%;
   }
+
   /*-------------------- FORECAST --------------------*/
   #hide {
     display: block;
