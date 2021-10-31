@@ -236,7 +236,7 @@ figure {
 }
 
 #gallery-main p {
-  padding: 0.2em;
+  margin: 1em;
 }
 /*------------- CLEARFIX --------------------*/
 .clearfix:after {
