@@ -1,0 +1,12 @@
+:root {
+  --gray-row: #e7f0ed;
+  --green-row: #e7ffed;
+  --font-dark: black;
+  --font-light: white;
+  --heading: #628ca6;
+  --title: #7fb9c2;
+}
+
+table {
+  font-family: "Ubuntu", sans-serif;
+}
