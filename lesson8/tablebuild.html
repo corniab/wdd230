@@ -6,19 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table Build | Ben Cornia</title>
     <link rel="stylesheet" href="css/table.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <main>
       <table>
-        <caption>
-          Compiled 12.20.2020 by Ben Cornia
-        </caption>
         <thead>
           <tr>
             <th scope="colgroup" colspan="3">ACME Wildwest</th>
@@ -48,10 +39,10 @@
           <tr>
             <td scope="row">November</td>
             <td>$6,810</td>
-            <td>$7,500</td>
+            <td id="sales-record">$7,500</td>
           </tr>
           <tr>
-            <td scope="row">Black Friday</td>
+            <td scope="row"><i>Black Friday</i></td>
             <td colspan="2">$3,200</td>
           </tr>
           <tr>
@@ -60,7 +51,11 @@
             <td>$7,500</td>
           </tr>
         </tbody>
-        <tfoot></tfoot>
+        <tfoot>
+          <tr>
+            <td scope="row" colspan="3">Compiled 12.20.2020 by Ben Cornia</td>
+          </tr>
+        </tfoot>
       </table>
     </main>
   </body>
