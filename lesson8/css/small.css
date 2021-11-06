@@ -238,6 +238,59 @@ figure {
 #gallery-main p {
   margin: 1em;
 }
+
+/*-------------------- STORM CENTER --------------------*/
+
+form legend {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  font-family: "Catamaran", sans-serif;
+  color: whitesmoke;
+  text-shadow: 1px 1px darkslategray;
+}
+
+form fieldset {
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+}
+
+.top,
+fieldset div {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.top input,
+textarea,
+select {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.side {
+  display: block;
+  margin-top: 1rem;
+}
+
+#submitBtn {
+  /*top left bottom right*/
+  margin: 1.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 5px black;
+  width: 100%;
+}
+
+#submitBtn:hover {
+  box-shadow: 4px 4px 10px black;
+}
+
 /*------------- CLEARFIX --------------------*/
 .clearfix:after {
   content: "";
