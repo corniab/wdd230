@@ -36,3 +36,7 @@ imagesToLoad.forEach(image => {
 });
 
 
+// Update weather rating
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").textContent = rating;
+}

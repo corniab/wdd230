@@ -33,7 +33,7 @@
           <li><a href="gallery-8.html" class="nav-item">Gallery</a></li>
         </ul>
       </nav>
-      <main>
+      <main id="main-storm">
         <form action="thanks.html" method="get">
           <h2>Storm Center Report</h2>
           <fieldset>
@@ -81,8 +81,8 @@
               </datalist>
             </label>
 
-            <label class="top slider"
-              >Storm Severity
+            <label class="top"
+              >Storm Severity<span id="ratingvalue">5</span>
               <input
                 id="rating"
                 type="range"
@@ -92,7 +92,6 @@
                 oninput="adjustRating(this.value)"
                 onchange="adjustRating(this.value)"
               />
-              <span id="ratingvalue">5</span>
             </label>
 
             <label class="top">
@@ -163,5 +162,10 @@
     <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontloader.js"></script>
+    <script>
+      function adjustRating(rating) {
+        document.getElementById("ratingvalue").textContent = rating;
+      }
+    </script>
   </body>
 </html>
