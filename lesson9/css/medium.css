@@ -1,0 +1,109 @@
+@media screen and (min-width: 700px) {
+  /*-------------------- BODY --------------------*/
+  body {
+    font-size: 12pt;
+  }
+
+  /*-------------------- HEADINGS --------------------*/
+  h1 {
+    font-size: 36pt;
+  }
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  /*-------------------- HEADER --------------------*/
+  header img {
+    height: 150px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    display: block;
+  }
+
+  .motto {
+    text-align: center;
+  }
+
+  /*-------------------- NAVIGATION --------------------*/
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  /*-------------------- MAIN --------------------*/
+  #hero {
+    position: relative;
+  }
+
+  .weather-summary {
+    margin: 0;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+  }
+
+  /*-------------------- GALLERY --------------------*/
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+
+  /*-------------------- FORECAST --------------------*/
+  #hide {
+    display: block;
+  }
+
+  #forecast {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+  #forecast article {
+    background-color: whitesmoke;
+    font-size: 0.8em;
+    margin: 10px;
+  }
+
+  #forecast h3 {
+    padding: 0.5em;
+  }
+
+  .forecast-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  /*-------------------- FOOTER --------------------*/
+  footer {
+    font-size: 11pt;
+  }
+
+  .contact {
+    width: 90%;
+    padding: 1em;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}

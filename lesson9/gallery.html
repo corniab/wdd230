@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Southern Idaho Weather</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img src="images/weather-icon.png" alt="site logo" />
+        <div class="motto">
+          <h1>Southern Idaho Weather</h1>
+          <p>
+            Bringing you <b>weather</b> and <b>events</b> from Bear Lake to Soda
+            Springs!
+          </p>
+        </div>
+      </header>
+      <nav>
+        <ul class="navigation">
+          <li><a class="toggle-nav" href="#">Menu</a></li>
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="preston.html" class="nav-item">Preston</a></li>
+          <li><a href="#2" class="nav-item">Soda Springs</a></li>
+          <li><a href="#3" class="nav-item">Fish Haven</a></li>
+          <li><a href="stormcenter.html" class="nav-item">Storm Center</a></li>
+          <li><a href="gallery.html" class="nav-item">Gallery</a></li>
+        </ul>
+      </nav>
+      <main id="gallery-main">
+        <h2>Weather Gallery</h2>
+        <div id="gallery">
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/blue-lake.jpg"
+                alt="Blue Lake"
+              />
+            </figure>
+            <p>Sunset over a lake.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/cloudy-lake.jpg"
+                alt="cloudy lake"
+              />
+            </figure>
+            <p>Overcast mountain lake.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/desert-rainbow.jpg"
+                alt="ranbow over a desert"
+              />
+            </figure>
+            <p>Rainbow during a desert rainstorm.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/foggy-elk.jpg"
+                alt="image of elk"
+              />
+            </figure>
+            <p>Elk in a foggy forest.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/foggy-pines.jpg"
+                alt="image of cat"
+              />
+            </figure>
+            <p>Foggy pines in the fall.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/icy-lake.jpg"
+                alt="Cabin on an icy lake."
+              />
+            </figure>
+            <p>Cabin on an icy, winter lake.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/lightning-desert.jpg"
+                alt="desert lightning"
+              />
+            </figure>
+            <p>Thunderstorm over the desert.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/snowy-forest.jpg"
+                alt="cabin in a snowstorm"
+              />
+            </figure>
+            <p>Cabin during a rainstorm.</p>
+          </div>
+          <div class="gallery-image">
+            <figure>
+              <img
+                src="https://via.placeholder.com/300x400"
+                data-src="images/starry-lake.jpg"
+                alt="image of cat"
+              />
+            </figure>
+            <p>Milky way over a lake.</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <h3>Contact Information</h3>
+        <div class="contact">
+          <div>
+            <img src="images/ig-instagram.png" alt="instagram icon" />
+            <p>Instagram</p>
+          </div>
+          <div>
+            <img src="images/facebook-app.png" alt="facebook icon" />
+            <p>Facebook</p>
+          </div>
+          <div>
+            <img src="images/email-square-color.png" alt="email icon" />
+            <p>weather@southernidaho.com</p>
+          </div>
+          <div>
+            <img src="images/call-square.png" alt="phone icon" />
+            <p>(208) 123-5678</p>
+          </div>
+        </div>
+        <img src="images/map.jpg" alt="map of southern Idaho" id="map-image" />
+        <p>
+          &copy; <span id="copyright"></span> | Ben Cornia | Utah |
+          <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho</a>
+        </p>
+        <p>Today's Date: <span id="currentDate">0</span></p>
+        <p>You visited this page <span id="last-visited"></span> day(s) ago</p>
+      </footer>
+    </div>
+    <script src="js/date.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+    <script src="js/imagehandling.js"></script>
+  </body>
+</html>
