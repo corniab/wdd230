@@ -1,23 +1,43 @@
+/*---------------------- SMALL VIEW ----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Libre+Franklin:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+}
+
+h1,
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: rgba(105, 180, 255, 0.5);
+}
+
 main {
   text-align: center;
-  max-width: 1400px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
-#cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.cards {
+  padding: 1em;
+  display: grid;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 section {
-  margin: 0 auto;
-  margin-bottom: 1em;
-  max-width: 300px;
-  background-image: linear-gradient(180deg, whitesmoke, lightblue);
+  margin: 1em;
+  min-width: 10rem;
+  background-image: linear-gradient(180deg, lightgray, lightblue);
   border-radius: 1em;
-  line-height: 0.5em;
   box-shadow: 5px 5px 10px darkslategray;
+  padding: 1em;
 }
 
 h2 {
@@ -25,5 +45,20 @@ h2 {
 }
 img {
   width: 50%;
-  box-shadow: 3px 3px 5px darkslategray;
+  box-shadow: 3px 3px 3px darkslategray;
+  border-radius: 5px;
+}
+
+/* ---------------------- MEDIUM VIEW ----------------------*/
+@media screen and (min-width: 33rem) {
+  .cards {
+    grid-template-columns: auto auto;
+  }
+}
+
+/*---------------------- LARGE VIEW ----------------------*/
+@media screen and (min-width: 65rem) {
+  .cards {
+    grid-template-columns: auto auto auto auto;
+  }
 }

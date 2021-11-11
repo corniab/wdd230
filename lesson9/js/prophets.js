@@ -12,7 +12,7 @@ function output(data) {
   let prophets = data['prophets']
 
   // Grab .cards div
-  const card = document.getElementById('cards');
+  const card = document.querySelector('.cards');
 
   // Loop through array of prophets and append to page.
   prophets.forEach(prophet => {
@@ -27,11 +27,11 @@ function output(data) {
 
     // Create p for dob
     let dob = document.createElement('p');
-    dob.textContent = `Date of Birth: ${prophet['birthdate']}`;
+    dob.textContent = `DOB: ${prophet['birthdate']}`;
 
     // Create p for place of birth
     let birthplace = document.createElement('p');
-    birthplace.textContent = `Place of Birth: ${prophet['birthplace']}`;
+    birthplace.textContent = `Birthplace: ${prophet['birthplace']}`;
 
     // Create img
     let img = document.createElement('img');
