@@ -117,10 +117,6 @@
     max-width: 80%;
   }
 
-  .town-heading p:first-of-type {
-    margin-bottom: 2rem;
-  }
-
   /*-------------------- FOOTER --------------------*/
   footer {
     font-size: 11pt;
