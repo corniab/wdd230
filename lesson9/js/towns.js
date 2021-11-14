@@ -41,7 +41,7 @@ function output(data) {
 
         // Population
         let population = document.createElement('p');
-        population.textContent = `Popuulation: ${place['currentPopulation']}`;
+        population.textContent = `Population: ${place['currentPopulation']}`;
 
         // Rain fall
         let rainfall = document.createElement('p');
@@ -53,10 +53,10 @@ function output(data) {
         img.alt = `Image of ${place['name']}`;
 
         // Append heading and motto to div
-        div.append(heading, motto);
+        div.append(heading, motto, yearFounded, population, rainfall);
 
         // Append rest of content to section
-        section.append(div, yearFounded, population, rainfall, img); 
+        section.append(div, img); 
         
         // Append section to page
         townContent.append(section);

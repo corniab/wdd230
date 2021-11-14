@@ -321,6 +321,37 @@ form div {
   border-radius: 1rem;
   box-shadow: 3px 3px 6px black;
 }
+/*-------------------- HOME MAIN --------------------*/
+
+.town-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.town-section {
+  background-color: rgba(211, 211, 211, 0.8);
+  padding: 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px darkslategray;
+  text-align: center;
+}
+
+.town-section img {
+  border-radius: 0.5em;
+  max-width: 80%;
+}
+
+.town-heading p:first-of-type {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
 /*------------- CLEARFIX --------------------*/
 .clearfix:after {
   content: "";

@@ -94,6 +94,33 @@
     padding: 1.5em;
   }
 
+  /*-------------------- HOME MAIN --------------------*/
+
+  .town-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .town-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .town-section:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .town-section img {
+    border-radius: 0.5em;
+    max-width: 80%;
+  }
+
+  .town-heading p:first-of-type {
+    margin-bottom: 2rem;
+  }
+
   /*-------------------- FOOTER --------------------*/
   footer {
     font-size: 11pt;
