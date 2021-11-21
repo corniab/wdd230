@@ -37,80 +37,20 @@
       <main>
         <h2>Preston, Idaho</h2>
         <section id="hero">
-          <!-- <img src="images/hero-img.jpg" alt="hero image" /> -->
-          <picture>
-            <source
-              media="(max-width: 425px)"
-              srcset="images/hero-img400.jpg"
-            />
-            <source
-              media="(max-width: 625px)"
-              srcset="images/hero-img600.jpg"
-            />
-            <source
-              media="(max-width: 1000px)"
-              srcset="images/hero-img1000.jpg"
-            />
-            <img src="images/hero-img1000.jpg" alt="hero image" />
-          </picture>
+          <img src="images/hero-img.jpg" alt="hero image" />
+
           <div class="weather-summary">
             <h3>Weather Summary</h3>
-            <p>Currently: Sunny</p>
-            <p>High: <span id="temperature">32</span>&#8457;</p>
+            <p>Currently: <span id="description"></span></p>
+            <p>High: <span id="temperature"></span>&#8457;</p>
             <p>Wind Chill: <span id="windchill"></span>&#8457;</p>
-            <p>Humidity: <span id="humidity">30%</span></p>
-            <p>Wind Speed: <span id="windspeed">45</span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
           </div>
         </section>
         <section id="hide">
           <h3>Forecast</h3>
-          <div id="forecast">
-            <article>
-              <header>
-                <h3><span class="forecast-day"></span></h3>
-              </header>
-              <div class="forecast-content">
-                <img src="images/forecast-icon.png" alt="sun icon" />
-                <p>High: 76 &#8457;</p>
-              </div>
-            </article>
-            <article>
-              <header>
-                <h3><span class="forecast-day"></span></h3>
-              </header>
-              <div class="forecast-content">
-                <img src="images/forecast-icon.png" alt="sun icon" />
-                <p>High: 76 &#8457;</p>
-              </div>
-            </article>
-            <article>
-              <header>
-                <h3><span class="forecast-day"></span></h3>
-              </header>
-              <div class="forecast-content">
-                <img src="images/forecast-icon.png" alt="sun icon" />
-                <p>High: 76 &#8457;</p>
-              </div>
-            </article>
-            <article>
-              <header>
-                <h3><span class="forecast-day"></span></h3>
-              </header>
-              <div class="forecast-content">
-                <img src="images/forecast-icon.png" alt="sun icon" />
-                <p>High: 76 &#8457;</p>
-              </div>
-            </article>
-            <article>
-              <header>
-                <h3><span class="forecast-day"></span></h3>
-              </header>
-              <div class="forecast-content">
-                <img src="images/forecast-icon.png" alt="sun icon" />
-                <p>High: 76 &#8457;</p>
-              </div>
-            </article>
-          </div>
+          <div id="forecast"></div>
         </section>
         <section id="new-article">
           <h3>Article Title</h3>
@@ -160,9 +100,9 @@
         <p>Today's Date: <span id="currentDate"></span></p>
       </footer>
     </div>
+    <script src="js/weatherapi.js"></script>
     <script src="js/date.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontloader.js"></script>
   </body>

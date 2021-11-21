@@ -2,30 +2,89 @@
 const cityID = '5604473'
 const key = '16e5e0c89da2e533aa4d31b7753cd2ad'
 const units = 'imperial'
-const url = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${key}&units=${units}`
+const cnt = 5
+const currentWeather = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${key}&units=${units}`
+const fiveDay = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&appid=${key}&units=${units}`
+const imagesrc = 'https://openweathermap.org/img/w/'
 
-// Make a request to api
-fetch(url).then(response => response.json())
-          .then(data => output(data));
+// Make a request to current weather api
+fetch(currentWeather).then(response => response.json())
+          .then(data => summary(data));
 
-// Output function
-function output(data) {
-    console.log(data);
-    document.getElementById('current-temp').textContent = data.main.temp;
+// Weather summary function
+function summary(data) {
+  // Current description
+  document.getElementById("description").textContent = data.weather[0]["description"];
 
-    //Use a variable to store the image address which needs to be concatenated together given the API icon code value result.
-    const imagesrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  // High temperature
+  document.getElementById("temperature").textContent = Math.round(data.main.temp_max);
 
-    //Use a variable to store the weather description.
-    const description = data.weather[0].description;
+  // Humidity
+  document.getElementById("humidity").textContent = data.main.humidity;
 
-    //Assign the <span> tag  with the id of 'imagesrc' the concatenated image variable to to display the full address for testing purposes.
-    document.getElementById('imagesrc').textContent = imagesrc;
+  // Wind Speed
+  document.getElementById("windspeed").textContent = Math.round(data.wind.speed);
 
-    //Set the src attribute for the <img> with the id of 'icon'.
-    document.getElementById('icon').setAttribute('src', imagesrc);
+  // Calculates and returns windchill factor for overlay.
+  const temperature = parseFloat(document.getElementById("temperature").textContent);
+  const windspeed = parseFloat(document.getElementById("windspeed").textContent);
 
-   // Set the alt attribute for the <img> for accessibility.
-   document.getElementById('icon').setAttribute('alt', description);
+  const windchill = Math.round(35.74 + (.6215*temperature) - (35.75*Math.pow(windspeed, .16)) + (.4725*temperature*Math.pow(windspeed, .16)))
+
+  document.getElementById("windchill").textContent = windchill
 };
 
+// Make a request to forecast api
+fetch(fiveDay).then(response => response.json())
+              .then(data => forecast(data))
+
+// 5 day forecast function.
+function forecast(data) {
+
+  const forecast_list = data.list
+
+  const forecast_div = document.getElementById("forecast")
+
+
+  forecast_list.forEach(day => {
+    if (day.dt_txt.substring(11,) == "18:00:00") {
+      console.log(day)
+    // Create article
+    article = document.createElement("article")
+
+    // Create header
+    header = document.createElement("header")
+
+    // Create heading
+    heading = document.createElement("h3")
+    heading.textContent = new Date(day.dt_txt).toLocaleDateString('en-us', {weekday:"long"})
+
+    // Create div .forecast-content
+    div = document.createElement("div")
+    div.classList.add("forecast-content")
+
+    // Create img
+    img = document.createElement("img")
+    img.src = `${imagesrc}${day.weather[0].icon}.png`
+    img.alt = "Forecast weather icon"
+
+    // Create p
+    p = document.createElement("p")
+    p.innerHTML = `High: ${Math.round(day.main.temp_max)} &#8457;`
+
+    // Append img and p to div
+    div.append(img, p)
+
+    // Append heading to header
+    header.append(heading)
+
+    // Append div and header to article
+    article.append(header, div)
+
+    // Append article to #forecast
+    forecast_div.append(article)
+
+    }
+  })
+
+}

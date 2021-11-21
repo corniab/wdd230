@@ -30,20 +30,3 @@ if (currentDate.getDay() == 5) {
     body.insertBefore(eventDiv,referenceNode)
   
   }
-
-// Add current date to forecast articles
-const forecastDay = document.querySelectorAll(".forecast-day");
-
-// Create list of weekdays.
-const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-let dayNumber = currentDate.getDay()
-
-forecastDay.forEach(day => {
-  if (dayNumber == 6) {
-    dayNumber = -1;
-  };
-  dayNumber += 1
-  day.textContent = dayName[dayNumber]
-
-});
