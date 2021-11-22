@@ -48,7 +48,13 @@ function forecast(data) {
 
   forecast_list.forEach(day => {
     if (day.dt_txt.substring(11,) == "18:00:00") {
-      console.log(day)
+
+    // fix date format
+    let dateWrong = day.dt_txt
+
+    // Replace '-' with '/'
+    let dateRight = dateWrong.replace(/-/g, "/")
+
     // Create article
     article = document.createElement("article")
 
@@ -57,7 +63,7 @@ function forecast(data) {
 
     // Create heading
     heading = document.createElement("h3")
-    heading.textContent = new Date(day.dt_txt).toLocaleDateString('en-us', {weekday:"long"})
+    heading.textContent = new Date(dateRight).toLocaleDateString('en-us', {weekday:"long"})
 
     // Create div .forecast-content
     div = document.createElement("div")
