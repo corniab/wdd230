@@ -48,47 +48,47 @@ function forecast(data) {
 
   forecast_list.forEach(day => {
     if (day.dt_txt.substring(11,) == "18:00:00") {
+    
+      // fix date format
+      let dateWrong = day.dt_txt
 
-    // fix date format
-    let dateWrong = day.dt_txt
+      // Replace '-' with '/'
+      let dateRight = dateWrong.replace(/-/g, "/")
 
-    // Replace '-' with '/'
-    let dateRight = dateWrong.replace(/-/g, "/")
+      // Create article
+      article = document.createElement("article")
 
-    // Create article
-    article = document.createElement("article")
+      // Create header
+      header = document.createElement("header")
 
-    // Create header
-    header = document.createElement("header")
+      // Create heading
+      heading = document.createElement("h3")
+      heading.textContent = new Date(dateRight).toLocaleDateString('en-us', {weekday:"long"})
 
-    // Create heading
-    heading = document.createElement("h3")
-    heading.textContent = new Date(dateRight).toLocaleDateString('en-us', {weekday:"long"})
+      // Create div .forecast-content
+      div = document.createElement("div")
+      div.classList.add("forecast-content")
 
-    // Create div .forecast-content
-    div = document.createElement("div")
-    div.classList.add("forecast-content")
+      // Create img
+      img = document.createElement("img")
+      img.src = `${imagesrc}${day.weather[0].icon}.png`
+      img.alt = "Forecast weather icon"
 
-    // Create img
-    img = document.createElement("img")
-    img.src = `${imagesrc}${day.weather[0].icon}.png`
-    img.alt = "Forecast weather icon"
+      // Create p
+      p = document.createElement("p")
+      p.innerHTML = `High: ${Math.round(day.main.temp_max)} &#8457;`
 
-    // Create p
-    p = document.createElement("p")
-    p.innerHTML = `High: ${Math.round(day.main.temp_max)} &#8457;`
+      // Append img and p to div
+      div.append(img, p)
 
-    // Append img and p to div
-    div.append(img, p)
+      // Append heading to header
+      header.append(heading)
 
-    // Append heading to header
-    header.append(heading)
+      // Append div and header to article
+      article.append(header, div)
 
-    // Append div and header to article
-    article.append(header, div)
-
-    // Append article to #forecast
-    forecast_div.append(article)
+      // Append article to #forecast
+      forecast_div.append(article)
 
     }
   })
