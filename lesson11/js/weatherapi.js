@@ -81,7 +81,7 @@ function forecast(data) {
       header = document.createElement("header")
 
       // Create heading
-      heading = document.createElement("h3")
+      heading = document.createElement("h4")
       heading.textContent = new Date(dateRight).toLocaleDateString('en-us', {weekday:"long"})
 
       // Create div .forecast-content

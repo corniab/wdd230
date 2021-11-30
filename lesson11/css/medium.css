@@ -1,18 +1,25 @@
 @media screen and (min-width: 700px) {
   /*-------------------- BODY --------------------*/
   body {
-    font-size: 12pt;
+    font-size: 1.1rem;
   }
 
   /*-------------------- HEADINGS --------------------*/
   h1 {
-    font-size: 36pt;
+    font-size: 2.2rem;
   }
 
   h2 {
-    font-size: 24pt;
+    font-size: 1.9rem;
   }
 
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
   /*-------------------- HEADER --------------------*/
   header img {
     height: 150px;
@@ -103,7 +110,7 @@
     border-radius: 0.2em;
   }
 
-  #forecast h3 {
+  #forecast h4 {
     padding: 0.5em;
   }
 
@@ -133,6 +140,10 @@
   }
 
   .home-article {
+    text-align: left;
+  }
+
+  .home-article h3 {
     text-align: left;
   }
 

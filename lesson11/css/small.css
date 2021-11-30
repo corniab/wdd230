@@ -11,7 +11,7 @@ body {
   padding: 0;
   background-color: lightcoral;
   font-family: "Merriweather", sans-serif;
-  font-size: 10pt;
+  font-size: 0.9rem;
 }
 
 h1,
@@ -24,11 +24,15 @@ h4 {
 }
 
 h1 {
-  font-size: 22pt;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 
 /*------------- EVENT BANNER --------------------*/
@@ -133,9 +137,6 @@ main {
 
 main h2 {
   text-align: center;
-}
-section {
-  margin: 0 auto;
 }
 
 #hero img {
@@ -377,10 +378,13 @@ form div {
   padding: 1em;
   width: 100%;
   background-color: rgba(211, 211, 211, 0.8);
-  text-align: center;
   margin-bottom: 2em;
   line-height: 2.1rem;
   border-radius: 0.2em;
+}
+
+.home-article h3 {
+  text-align: center;
 }
 
 #home-img {

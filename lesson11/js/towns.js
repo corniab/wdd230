@@ -28,7 +28,7 @@ function output(data) {
         div.classList.add('town-heading');
 
         // Create heading
-        let heading = document.createElement('h2');
+        let heading = document.createElement('h3');
         heading.textContent = place['name'];
 
         // Create motto
