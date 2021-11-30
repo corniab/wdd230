@@ -50,7 +50,7 @@ function output(data) {
         // Image
         let img = document.createElement('img');
         img.src = `images/${place['photo']}`;
-        img.alt = `Image of ${place['name']}`;
+        img.alt = `Image of mountains and lakes around ${place['name']}`;
 
         // Append heading and motto to div
         div.append(heading, motto, yearFounded, population, rainfall);
