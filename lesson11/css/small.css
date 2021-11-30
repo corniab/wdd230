@@ -128,12 +128,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: left;
+  text-align: center;
   border-radius: 1em;
 }
 
 section {
-  margin: 0.5em;
+  margin: 0 auto;
 }
 
 #hero img {
@@ -150,6 +150,15 @@ section {
 
 #hide {
   display: none;
+}
+
+#new-article {
+  text-align: left;
+}
+
+#new-article h3 {
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 #new-article img {
@@ -332,6 +341,7 @@ form div {
 
 .town-section {
   background-color: rgba(211, 211, 211, 0.8);
+  margin-bottom: 2em;
   padding: 1em;
   border-radius: 1em;
   display: flex;
@@ -365,6 +375,19 @@ form div {
   width: 100%;
   margin-top: 1em;
   border-radius: 0.2em;
+}
+/*------------- EVENTS DIV --------------------*/
+#town-events {
+  padding: 1em;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.8);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#town-events h3 {
+  border-bottom: 2px solid black;
+  padding: 0.5rem 0 0.5rem;
 }
 
 /*------------- CLEARFIX --------------------*/

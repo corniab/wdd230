@@ -18,7 +18,7 @@ document.getElementById("currentDate").textContent = displayDate;
 // Return the copyright year.
 document.getElementById("copyright").textContent = currentDate.getFullYear();
 
-// Add banner at top of page if its Saturday.
+// Add banner at top of page if its Friday.
 if (currentDate.getDay() == 5) {
     let body = document.querySelector("body")
     let eventDiv = document.createElement("div")
@@ -26,7 +26,7 @@ if (currentDate.getDay() == 5) {
                             9:00 a.m. Saturday at the city park pavilion."
     eventDiv.id = "event"
                             
-    referenceNode = document.getElementById("container")
+    let referenceNode = document.getElementById("container")
     body.insertBefore(eventDiv,referenceNode)
   
   }

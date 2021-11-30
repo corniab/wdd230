@@ -44,6 +44,10 @@
   }
 
   /*-------------------- MAIN --------------------*/
+  main {
+    text-align: left;
+  }
+
   #hero {
     position: relative;
   }
@@ -53,6 +57,10 @@
     position: absolute;
     top: 1em;
     left: 1em;
+  }
+
+  #new-article h3 {
+    text-align: left;
   }
 
   /*-------------------- GALLERY --------------------*/
@@ -69,18 +77,25 @@
   /*-------------------- FORECAST --------------------*/
   #hide {
     display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  #hide h3 {
+    padding: 1em 0 0.2em;
   }
 
   #forecast {
     display: flex;
-    padding: 5px;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
   }
 
   #forecast article {
     background-color: whitesmoke;
     font-size: 0.8em;
-    margin: 10px;
+    margin-bottom: 2em;
   }
 
   #forecast h3 {
@@ -96,16 +111,11 @@
 
   /*-------------------- HOME MAIN --------------------*/
 
-  .town-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .town-section {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    width: 100%;
   }
 
   .town-section:nth-child(2) {
@@ -115,6 +125,11 @@
   .town-section img {
     border-radius: 0.5em;
     max-width: 50%;
+  }
+
+  /*------------- EVENTS DIV --------------------*/
+  #town-events {
+    text-align: left;
   }
 
   /*-------------------- FOOTER --------------------*/
