@@ -16,7 +16,6 @@ navItem.forEach(element => {
 
   if (element.href === currentPage) {
     element.classList.add("active-nav")
-    console.log("match")
   } else {
     element.classList.remove("active-nav")
   }
