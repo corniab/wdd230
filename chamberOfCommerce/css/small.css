@@ -76,7 +76,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 
 .hero-content {
@@ -196,7 +196,6 @@ footer ul {
 
 .main-home section h3 {
   text-align: center;
-  color: white;
   margin: 0;
   padding: 3rem;
 }
