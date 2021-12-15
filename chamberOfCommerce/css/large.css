@@ -70,25 +70,51 @@
     border-right: solid var(--background-light) 3px;
   }
 
+  /*---------------------  EVENTS ---------------------*/
+
   .upcoming-events {
     grid-area: event;
     margin: 2rem 0 0 2rem;
+    background-color: var(--accent-3);
   }
 
+  .calendar-tile h4 {
+    background-color: var(--accent-3);
+    border-top: solid var(--font-light) 3px;
+  }
+
+  /*---------------------  WEATHER ---------------------*/
   .weather-forecast {
     grid-area: weather;
     margin: 2rem 0 0 2rem;
+    background-color: var(--accent-2);
+    color: var(--font-light);
   }
 
+  .weather-forecast h3 {
+    border-bottom: solid var(--background-light) 3px;
+  }
+
+  .daily-forecast:nth-child(odd) {
+    background-color: var(--accent-2);
+  }
+
+  .daily-forecast:nth-child(1),
+  .daily-forecast:nth-child(2),
+  .daily-forecast:nth-child(3) {
+    border-right: solid var(--background-light) 3px;
+  }
+  /*---------------------  BUSINESS ---------------------*/
   .business-spotlight {
     grid-area: business;
     background-color: var(--background-light);
-    margin: 2rem 4rem 2rem;
+    margin: 2rem 4rem 0;
     padding: 1em;
   }
 
   /*---------------------  FOOTER ---------------------*/
   footer {
+    margin-top: 2rem;
     flex-direction: row;
     justify-content: space-around;
   }
