@@ -46,6 +46,8 @@ h4 {
 /*---------------------  NORMAL HEADER ---------------------*/
 
 .normal-header {
+  display: flex;
+  flex-direction: column;
   background-color: var(--background-dark);
   text-align: center;
   color: var(--font-light);

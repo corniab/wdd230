@@ -10,17 +10,25 @@ const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&exclude=
 // weather content
 const weatherContent = document.querySelector(".weather-content")
 
+// current conditions
+const heroTemp = document.getElementById("hero-temp")
+const heroHumidity = document.getElementById("humidity")
+const forecastDescription = document.getElementById("forecast-description")
+
 fetch(url).then(response => response.json())
           .then(data => createForecast(data))
-
 
 function createForecast(data) {
     let dailyForecasts = data.daily   
     console.log(dailyForecasts)
+    heroTemp.innerHTML = `${Math.round(dailyForecasts[0].temp["day"])}&deg;F`
+    heroHumidity.innerHTML = `${dailyForecasts[0].humidity}%`
+    forecastDescription.innerHTML = dailyForecasts[0].weather[0].description
+
 
     for (let i=1; i < 5; i++) {
         let forecastDay = new Date(dailyForecasts[i].dt*1000).toLocaleDateString("en-US", {weekday: "long"})
-        let forecastTemp = `${dailyForecasts[i].temp["day"]} &deg;F`
+        let forecastTemp = `${dailyForecasts[i].temp["day"]}&deg;F`
         let forecastIcon = `https://openweathermap.org/img/w/${dailyForecasts[i].weather[0].icon}.png`;
 
         let foreCastTempDiv = document.createElement("div")
