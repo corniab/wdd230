@@ -101,6 +101,10 @@ h4 {
   display: none;
 }
 
+.weather-forecast {
+  display: none;
+}
+
 #join-btn {
   color: var(--font-light);
   font-size: 1.5rem;
@@ -224,7 +228,7 @@ h5 {
 
 .calendar-tile {
   display: flex;
-  border-top: solid var(--background-dark) 3px;
+  border-top: solid var(--font-dark) 3px;
 }
 .calendar-tile h4 {
   margin: 0;

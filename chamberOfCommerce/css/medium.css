@@ -1,0 +1,32 @@
+@media screen and (min-width: 43rem) {
+  /*---------------------  HEADER ---------------------*/
+  #join-btn {
+    width: 50%;
+    margin: 0 auto 8rem;
+  }
+  /*---------------------  NAV ---------------------*/
+  nav {
+    order: -1;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  /*---------------------  4 DAY FORECAST ---------------------*/
+  .weather-forecast {
+    display: block;
+  }
+
+  .weather-forecast h3 {
+    background-color: var(--accent-2);
+  }
+}
