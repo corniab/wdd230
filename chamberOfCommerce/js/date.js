@@ -1,11 +1,15 @@
-// // Set format for date to display.
-// const dateFormat = {weekday: "long",
-//                  month: "long",
-//                  day: "2-digit",
-//                  year: "numeric"
+// Set format for date to display.
+const dateFormat = {weekday: "long",
+                 month: "long",
+                 day: "2-digit",
+                 year: "numeric"
 
-// }
+}
 
+
+const options = {month: "long",
+day: "2-digit",
+year: "numeric"}
 // Create new Date object.
 const currentDate = new Date();
 
@@ -17,6 +21,11 @@ const currentDate = new Date();
 
 // Return the copyright year.
 document.getElementById("copyright").textContent = currentDate.getFullYear();
+
+//Last modified
+let last_modified = new Date(document.lastModified).toLocaleDateString('en-US', options);
+
+document.getElementById("last-modified").innerText = last_modified
 
 // // Add banner at top of page if its Friday.
 // if (currentDate.getDay() == 5) {

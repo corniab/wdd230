@@ -188,3 +188,76 @@ footer ul {
 .phone-info {
   margin-top: 1rem;
 }
+
+/*---------------------  MAIN HOME ---------------------*/
+
+main section h3 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 3rem;
+}
+
+main section h3,
+h4,
+h5 {
+  text-align: center;
+}
+/*---------------------  MISSION ---------------------*/
+.mission h3 {
+  background-color: var(--background-dark);
+}
+
+.mission div h4 {
+  margin-bottom: -0.5rem;
+}
+
+.mission div {
+  padding: 0.5rem;
+}
+
+/*---------------------  EVENTS ---------------------*/
+.upcoming-events h3 {
+  background-color: var(--accent-3);
+  color: var(--font-dark);
+}
+
+.calendar-tile {
+  display: flex;
+  border-top: solid var(--background-dark) 3px;
+}
+.calendar-tile h4 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--accent-1);
+}
+
+.event-content {
+  display: grid;
+}
+.event-content p {
+  margin: 0.5rem;
+}
+
+.event-content img {
+  width: 25px;
+  opacity: 0.7;
+  justify-self: right;
+  margin: 0 1rem 1rem;
+}
+
+/*---------------------  BUSINESS SPOTLIGHT ---------------------*/
+.business-spotlight h3 {
+  background-color: var(--background-dark);
+}
+
+.business-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.business-info img {
+  max-width: 250px;
+}
