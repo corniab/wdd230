@@ -21,6 +21,10 @@
     display: none;
   }
 
+  a.active-nav {
+    border-bottom: 3px solid var(--background-light);
+  }
+
   /*---------------------  4 DAY FORECAST ---------------------*/
   .weather-forecast {
     display: block;

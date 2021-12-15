@@ -165,10 +165,6 @@ nav ul {
   display: block;
 }
 
-.active-nav {
-  text-decoration: underline;
-}
-
 .nav-normal {
   background-color: var(--accent-2);
 }
