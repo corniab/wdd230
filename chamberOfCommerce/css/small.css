@@ -20,12 +20,15 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+}
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: var(--font-body);
+  color: var(--font-dark);
 }
 
 section {
@@ -40,9 +43,19 @@ h4 {
   font-family: var(--font-heading);
 }
 
-/*---------------------  HERO MAIN SMALL---------------------*/
+/*---------------------  NORMAL HEADER ---------------------*/
 
-/*---------------------  HEADER ---------------------*/
+.normal-header {
+  background-color: var(--background-dark);
+  text-align: center;
+  color: var(--font-light);
+}
+
+.normal-header h1 {
+  font-size: 3.5rem;
+}
+
+/*---------------------  HERO HEADER ---------------------*/
 
 .hero-image {
   position: relative;
@@ -70,17 +83,16 @@ h4 {
   width: 100%;
   display: grid;
   grid-template-rows: 0fr 6fr 1fr;
+  color: var(--font-light);
 }
 
 .hero-title {
-  color: var(--font-light);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero-title :nth-child(1) {
-  margin-top: 0.5rem;
   font-size: 3.5rem;
   margin-bottom: -1rem;
 }
@@ -102,6 +114,12 @@ h4 {
   margin: 0.5em;
 }
 
+/*---------------------  WRAPPER ---------------------*/
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 /*---------------------  NAV ---------------------*/
 nav {
   width: 100%;
@@ -144,4 +162,29 @@ nav ul {
   text-decoration: underline;
 }
 
+.nav-normal {
+  background-color: var(--accent-2);
+}
+
 /*---------------------  FOOTER ---------------------*/
+footer {
+  background-color: var(--background-light);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer h4 {
+  margin-bottom: 0.1rem;
+}
+
+footer ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.phone-info {
+  margin-top: 1rem;
+}
