@@ -339,3 +339,63 @@ h5 {
   align-self: center;
   line-height: 2rem;
 }
+
+/*---------------------  FORM ---------------------*/
+.main-join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.top,
+.top input,
+.side,
+textarea {
+  display: block;
+}
+
+.top,
+.side,
+fieldset {
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.top input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+}
+
+form {
+  padding: 1rem;
+  max-width: 800px;
+}
+
+fieldset legend {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  padding: 0 0.3rem 0;
+}
+
+fieldset {
+  border: solid 2px var(--background-dark);
+}
+
+#submitBtn {
+  padding: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  border: solid 2px var(--background-dark);
+  background-color: var(--accent-1);
+  color: var(--font-light);
+  width: 100%;
+  transition: 0.2s;
+}
+
+#submitBtn:hover {
+  box-shadow: 2px 2px 2px var(--background-dark);
+}

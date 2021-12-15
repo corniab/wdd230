@@ -29,7 +29,116 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+      <main class="main-join">
+        <!-- business name - required
+business address
+business website
+business description -->
+
+        <form action="thanks.html" method="get">
+          <h2>Membership Form</h2>
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label class="top"
+              >First Name* <input type="text" name="first-name" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="last-name" required
+            /></label>
+            <label class="top">Title <input type="text" name="title" /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Cell Phone <input type="tel" name="phone"
+            /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Business Information</legend>
+            <label class="top"
+              >Business Name* <input type="text" name="business-name" required
+            /></label>
+            <label class="top"
+              >Address Line 1 <input type="text" name="line-1"
+            /></label>
+            <label class="top"
+              >Address Line 2 <input type="text" name="line-2"
+            /></label>
+            <label class="top"
+              >City, State, Zip <input type="text" name="city-state"
+            /></label>
+
+            <label class="top"
+              >Business Website <input type="url" name="website"
+            /></label>
+            <label class="top"
+              >Business Description
+              <textarea name="description" cols="30" rows="10"></textarea>
+            </label>
+          </fieldset>
+          <div class="levels">
+            <h3>Membership Levels Key</h3>
+            <div>
+              <h4>Non Profit Level</h4>
+              <ul>
+                <li>Free tickets to 1 luncheon.</li>
+                <li>Small listing in Chamber Directory</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Bronze</h4>
+              <ul>
+                <li>Free tickets to 2 luncheons.</li>
+                <li>Listing with photo in Chamber Directory.</li>
+                <li>Access to 1 training course.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Silver</h4>
+              <ul>
+                <li>Free tickets to 3 luncheons</li>
+                <li>Sponsored mentorship.</li>
+                <li>3 training courses.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Gold</h4>
+              <ul>
+                <li>Free tickets all luncheons</li>
+                <li>Full page ad.</li>
+                <li>Unlimited access to training courses</li>
+              </ul>
+            </div>
+          </div>
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label class="side"
+              ><input type="radio" name="level" value="non-profit" /> $100
+              Non-profit</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="bronze" /> $200
+              Bronze</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="silver" /> $400
+              Silver</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="gold" /> $1000
+              Gold</label
+            >
+          </fieldset>
+          <input type="submit" value="Join the Chamber" id="submitBtn" />
+        </form>
+      </main>
       <footer>
         <div class="resources">
           <h4>Resources</h4>
