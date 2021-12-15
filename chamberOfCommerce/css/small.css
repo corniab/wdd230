@@ -341,11 +341,7 @@ h5 {
 }
 
 /*---------------------  FORM ---------------------*/
-.main-join {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .top,
 .top input,
 .side,
@@ -373,6 +369,7 @@ textarea {
 form {
   padding: 1rem;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 fieldset legend {
@@ -398,4 +395,33 @@ fieldset {
 
 #submitBtn:hover {
   box-shadow: 2px 2px 2px var(--background-dark);
+}
+
+.levels {
+  background-color: var(--accent-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.levels-content {
+  padding: 1rem;
+}
+
+.levels ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.4rem;
+}
+
+.levels h3 {
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
+  border-bottom: solid 3px var(--background-dark);
+}
+.levels h4 {
+  text-align: left;
+  margin: 0.5rem 0 0;
 }
