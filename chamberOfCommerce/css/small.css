@@ -254,6 +254,7 @@ h5 {
 /*---------------------  BUSINESS SPOTLIGHT ---------------------*/
 .business-spotlight h3 {
   background-color: var(--background-dark);
+  color: var(--font-light);
 }
 
 .business-info:nth-child(odd) {

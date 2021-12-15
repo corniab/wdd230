@@ -29,7 +29,7 @@ function createForecast(data) {
     let dailyForecasts = data.daily 
     for (let i=1; i < 5; i++) {
         let forecastDay = new Date(dailyForecasts[i].dt*1000).toLocaleDateString("en-US", {weekday: "long"})
-        let forecastTemp = `${dailyForecasts[i].temp["day"]}&deg;F`
+        let forecastTemp = `${Math.round(dailyForecasts[i].temp["day"])}&deg;F`
         let forecastIcon = `https://openweathermap.org/img/w/${dailyForecasts[i].weather[0].icon}.png`;
 
         let foreCastTempDiv = document.createElement("div")
