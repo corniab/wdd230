@@ -48,6 +48,7 @@ function createForecast(data) {
 
         let dailyImage = document.createElement("img")
         dailyImage.src = forecastIcon
+        dailyImage.alt = "weather icon from openweather.com"
         
         dailyForecast.append(dailyImage, foreCastTempDiv)
 
