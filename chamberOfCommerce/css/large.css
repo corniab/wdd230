@@ -124,4 +124,15 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  /*---------------------  CITY MAIN ---------------------*/
+
+  .main-city {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .main-city section {
+    margin-top: 2rem;
+  }
 }
