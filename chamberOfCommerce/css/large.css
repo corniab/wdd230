@@ -70,6 +70,12 @@
     border-right: solid var(--background-light) 3px;
   }
 
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   /*---------------------  EVENTS ---------------------*/
 
   .upcoming-events {
