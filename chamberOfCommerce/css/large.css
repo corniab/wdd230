@@ -1,0 +1,51 @@
+@media screen and (min-width: 63rem) {
+  /*---------------------  HEADER ---------------------*/
+
+  .hero-content {
+    grid-template-columns: auto auto;
+  }
+
+  #join-btn {
+    grid-column: 1;
+    grid-row: 4;
+    width: 20rem;
+    margin: 3em;
+    justify-self: left;
+  }
+
+  .hero-title {
+    display: block;
+    padding-left: 1.5rem;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .hero-title h1 {
+    font-size: 3rem;
+  }
+
+  .hero-forecast {
+    display: block;
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
+    justify-self: right;
+    padding: 6rem;
+    font-size: 2rem;
+  }
+
+  .hero-forecast img {
+    width: 15px;
+    filter: invert(100%) sepia(38%) saturate(1003%) hue-rotate(291deg)
+      brightness(117%) contrast(100%);
+  }
+
+  /*---------------------  NAV ---------------------*/
+
+  nav {
+    grid-column: 2;
+  }
+  .navigation li a {
+    padding: 1rem;
+  }
+}
