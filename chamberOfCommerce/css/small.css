@@ -42,6 +42,8 @@ h4 {
 
 /*---------------------  HERO MAIN SMALL---------------------*/
 
+/*---------------------  HEADER ---------------------*/
+
 .hero-image {
   position: relative;
   width: 100vw;
@@ -67,31 +69,7 @@ h4 {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr 6fr 1fr;
-}
-
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-
-.navigation li img {
-  width: 50px;
-  margin: 1rem;
-  filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(189deg)
-    brightness(106%) contrast(101%);
-}
-
-.navigation ul {
-  margin: 0;
+  grid-template-rows: 0fr 6fr 1fr;
 }
 
 .hero-title {
@@ -102,7 +80,7 @@ h4 {
 }
 
 .hero-title :nth-child(1) {
-  margin-top: 0;
+  margin-top: 0.5rem;
   font-size: 3.5rem;
   margin-bottom: -1rem;
 }
@@ -115,7 +93,7 @@ h4 {
   color: var(--font-light);
   font-size: 1.5rem;
   background: none;
-  border: solid white 5px;
+  border: solid var(--font-light) 5px;
   padding: 1em;
   text-decoration: none;
   display: flex;
@@ -124,8 +102,46 @@ h4 {
   margin: 0.5em;
 }
 
-/*---------------------  HEADER ---------------------*/
-
 /*---------------------  NAV ---------------------*/
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  font-size: 1.1rem;
+}
 
-/*---------------------  HEADER ---------------------*/
+nav ul {
+  margin: 0;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+}
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  color: var(--font-light);
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active-nav {
+  text-decoration: underline;
+}
+
+/*---------------------  FOOTER ---------------------*/
