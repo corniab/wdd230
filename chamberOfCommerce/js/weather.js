@@ -24,16 +24,18 @@ function createForecast(data) {
         let forecastIcon = `https://openweathermap.org/img/w/${dailyForecasts[i].weather[0].icon}.png`;
 
         let foreCastTempDiv = document.createElement("div")
+        foreCastTempDiv.className = "forecast-temp"
 
         let foreCastTempDay = document.createElement("p")
-        foreCastTempDay.innerText = forecastDay
+        foreCastTempDay.innerHTML = forecastDay
 
         let forecastTempP = document.createElement("p")
         forecastTempP.innerHTML = forecastTemp
 
-        foreCastTempDiv.append(forecastDay, forecastTempP)
+        foreCastTempDiv.append(forecastTempP, foreCastTempDay)
 
         let dailyForecast = document.createElement("div")
+        dailyForecast.className = "daily-forecast"
 
         let dailyImage = document.createElement("img")
         dailyImage.src = forecastIcon

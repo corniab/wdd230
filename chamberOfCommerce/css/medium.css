@@ -29,4 +29,45 @@
   .weather-forecast h3 {
     background-color: var(--accent-2);
   }
+
+  .weather-content {
+    display: flex;
+  }
+
+  .daily-forecast {
+    width: 100%;
+    min-height: 15rem;
+    display: grid;
+  }
+
+  .daily-forecast:nth-child(odd) {
+    background-color: var(--background-light);
+  }
+
+  .daily-forecast img {
+    justify-self: right;
+    padding: 1rem;
+  }
+
+  .forecast-temp {
+    padding: 1rem;
+  }
+
+  .forecast-temp p:nth-child(2) {
+    margin-block-start: 0;
+    font-weight: 900;
+  }
+  .forecast-temp p:nth-child(1) {
+    margin-block-end: 0;
+  }
+
+  /*---------------------  MISSION ---------------------*/
+  .mission div {
+    text-align: center;
+  }
+
+  /*---------------------  EVENT ---------------------*/
+  .event-content {
+    text-align: center;
+  }
 }

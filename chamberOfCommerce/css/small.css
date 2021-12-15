@@ -110,11 +110,12 @@ h4 {
   font-size: 1.5rem;
   background: none;
   border: solid var(--font-light) 5px;
-  padding: 1em;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: center;
+  width: 80%;
   margin: 0.5em;
 }
 
@@ -221,6 +222,7 @@ h5 {
 }
 
 /*---------------------  EVENTS ---------------------*/
+
 .upcoming-events h3 {
   background-color: var(--accent-3);
   color: var(--font-dark);
@@ -228,7 +230,8 @@ h5 {
 
 .calendar-tile {
   display: flex;
-  border-top: solid var(--font-dark) 3px;
+  flex-direction: column;
+  justify-content: center;
 }
 .calendar-tile h4 {
   margin: 0;
@@ -238,6 +241,7 @@ h5 {
 
 .event-content {
   display: grid;
+  grid-template-columns: auto;
 }
 .event-content p {
   margin: 0.5rem;
@@ -253,6 +257,11 @@ h5 {
 /*---------------------  BUSINESS SPOTLIGHT ---------------------*/
 .business-spotlight h3 {
   background-color: var(--background-dark);
+}
+
+.business-info:nth-child(odd) {
+  background-color: var(--background-dark);
+  color: var(--font-light);
 }
 
 .business-info {
