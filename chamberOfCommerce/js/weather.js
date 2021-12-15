@@ -20,7 +20,6 @@ fetch(url).then(response => response.json())
 
 function createForecast(data) {
     let dailyForecasts = data.daily   
-    console.log(dailyForecasts)
     heroTemp.innerHTML = `${Math.round(dailyForecasts[0].temp["day"])}&deg;F`
     heroHumidity.innerHTML = `${dailyForecasts[0].humidity}%`
     forecastDescription.innerHTML = dailyForecasts[0].weather[0].description

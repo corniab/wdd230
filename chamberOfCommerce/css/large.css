@@ -48,4 +48,48 @@
   .navigation li a {
     padding: 1rem;
   }
+
+  /*---------------------  MAIN ---------------------*/
+  .main-home {
+    display: grid;
+    grid-template-areas: "mission business" "weather business" "weather business" "event business";
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem 4rem;
+  }
+
+  /*---------------------  MISSION ---------------------*/
+  .mission {
+    grid-area: mission;
+    margin: 2rem 0 0 2rem;
+    display: flex;
+    background-color: var(--background-dark);
+    color: var(--font-light);
+  }
+
+  .mission h3 {
+    border-right: solid var(--background-light) 3px;
+  }
+
+  .upcoming-events {
+    grid-area: event;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .weather-forecast {
+    grid-area: weather;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .business-spotlight {
+    grid-area: business;
+    background-color: var(--background-light);
+    margin: 2rem 4rem 2rem;
+    padding: 1em;
+  }
+
+  /*---------------------  FOOTER ---------------------*/
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
