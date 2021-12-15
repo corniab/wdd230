@@ -19,12 +19,14 @@ fetch(url).then(response => response.json())
           .then(data => createForecast(data))
 
 function createForecast(data) {
-    let dailyForecasts = data.daily   
-    heroTemp.innerHTML = `${Math.round(dailyForecasts[0].temp["day"])}&deg;F`
-    heroHumidity.innerHTML = `${dailyForecasts[0].humidity}%`
-    forecastDescription.innerHTML = dailyForecasts[0].weather[0].description
+    //update current conditions
+    let current = data.current  
+    heroTemp.innerHTML = `${Math.round(current.temp)}&deg;F`
+    heroHumidity.innerHTML = `${current.humidity}%`
+    forecastDescription.innerHTML = current.weather[0].description
 
-
+    //Create 4 day forecast
+    let dailyForecasts = data.daily 
     for (let i=1; i < 5; i++) {
         let forecastDay = new Date(dailyForecasts[i].dt*1000).toLocaleDateString("en-US", {weekday: "long"})
         let forecastTemp = `${dailyForecasts[i].temp["day"]}&deg;F`
@@ -53,6 +55,22 @@ function createForecast(data) {
         weatherContent.append(dailyForecast)
 
 
+    }
+    
+    //Display alerts if any
+    let wrapper = document.querySelector(".wrapper")
+    let body = document.querySelector("body")
+    if (data.events) {
+        let alertsDiv = document.createElement("div")
+        alertsDiv.className = "alerts"
+
+        alertsP = document.createElement("p")
+        alertsP.innerHTML = data.events.description
+
+        alertsDiv.append(alertsP)
+
+        //insert alerts div before wrapper
+        body.insertBefore(alertsDiv, wrapper)
     }
 }
 

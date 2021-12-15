@@ -198,14 +198,14 @@ footer ul {
 
 /*---------------------  MAIN HOME ---------------------*/
 
-main section h3 {
+.main-home section h3 {
   text-align: center;
   color: white;
   margin: 0;
   padding: 3rem;
 }
 
-main section h3,
+.main-home section h3,
 h4,
 h5 {
   text-align: center;
@@ -275,4 +275,13 @@ h5 {
 
 .business-info img {
   max-width: 250px;
+}
+
+/*---------------------  ALERTS ---------------------*/
+.alerts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-1);
+  color: var(--font-light);
 }
