@@ -65,7 +65,7 @@ function createForecast(data) {
         let alertsDiv = document.createElement("div")
         alertsDiv.className = "alerts"
 
-        alertsP = document.createElement("p")
+        alertsP = document.createElement("p") 
         alertsP.innerHTML = data.events.description
 
         alertsDiv.append(alertsP)

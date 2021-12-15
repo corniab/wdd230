@@ -11,6 +11,7 @@
   --accent-1: #ee6c4d; /*burnt cienna*/
   --accent-2: #457b9d; /*celadon blue*/
   --accent-3: #ffd166; /*orange yellow crayola*/
+  --accent-4: #359766; /*green cyan*/
 
   --font-heading: "Lato", sans-serif;
   --font-body: "Roboto", sans-serif;
@@ -73,11 +74,11 @@ h4 {
   width: 100%;
   height: 100%;
   background-color: var(--background-dark);
-  background: url("../images/home-hero-large-2.jpg");
+  background: url("../images/home-hero-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(10%);
+  filter: brightness(50%);
 }
 
 .hero-content {
@@ -282,4 +283,59 @@ h5 {
   align-items: center;
   background-color: var(--accent-1);
   color: var(--font-light);
+}
+
+/*---------------------  CITY MAIN ---------------------*/
+.main-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-city section {
+  justify-self: center;
+  width: 100%;
+}
+
+.history {
+  background-color: var(--background-light);
+}
+
+.demographics {
+  background-color: var(--accent-2);
+  color: var(--font-light);
+}
+
+.city-events {
+  background-color: var(--accent-3);
+}
+
+.demographics h3 {
+  border-bottom: 3px solid var(--background-light);
+}
+.history h3,
+.city-events h3 {
+  border-bottom: 3px solid var(--background-dark);
+}
+
+.main-city h3 {
+  margin: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.city-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.city-content ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  align-self: flex-start;
+  line-height: 2rem;
 }
