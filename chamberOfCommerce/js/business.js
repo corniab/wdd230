@@ -18,6 +18,12 @@ function createCards(data) {
         logo.src = business.logo
         logo.alt = `logo for ${business.name}`
 
+        //wrap each div with a tag
+        let businessA = document.createElement("a")
+        businessA.href = business.url
+
+        businessA.append(logo)
+
         let businessInfo = document.createElement("div")
         businessInfo.className = "business-card"
 
@@ -52,7 +58,7 @@ function createCards(data) {
 
 
         // append img, h3, ul to div
-        businessInfo.append(logo, addressH3, addressUl, contactH3, contactUl)
+        businessInfo.append(businessA, addressH3, addressUl, contactH3, contactUl)
 
         //append to main
         main.append(businessInfo)
