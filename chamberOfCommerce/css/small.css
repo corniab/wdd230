@@ -480,14 +480,29 @@ fieldset {
 
 .iframe-wrapper {
   background-color: var(--accent-2);
+  color: var(--font-light);
   width: 100%;
-  padding: 2rem;
   margin-top: 2rem;
 }
-.directors h3 {
+
+.directors h3,
+.iframe-wrapper h3 {
   margin: 0;
   padding: 2rem;
   border-bottom: solid 3px var(--font-light);
+}
+
+.iframe-content {
+  padding: 2rem;
+}
+
+.iframe-content ul li a {
+  color: var(--font-light);
+}
+
+.iframe-content ul:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .directors {
   width: 100%;
@@ -497,7 +512,8 @@ fieldset {
   margin-bottom: 2rem;
 }
 
-.directors ul {
+.directors ul,
+.iframe-wrapper ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
