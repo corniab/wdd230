@@ -466,3 +466,13 @@ fieldset {
 #toggle-grid {
   display: none;
 }
+
+/*---------------------  MAIN CONTACT ---------------------*/
+.main-contact {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.main-contact form {
+  width: 100%;
+}
