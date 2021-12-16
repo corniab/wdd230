@@ -143,7 +143,6 @@
       "form map"
       "directors directors";
     grid-template-columns: 4fr 1fr;
-    justify-content: center;
   }
 
   .main-contact form {
@@ -152,9 +151,15 @@
 
   .iframe-wrapper {
     grid-area: map;
-    height: 100%;
-    width: min-content;
     margin-right: 3rem;
+    flex-direction: column;
+    width: min-content;
+  }
+
+  .iframe-wrapper h3 {
+    border-bottom: 3px solid var(--font-light);
+    border-right: none;
+    width: 100%;
   }
 
   .directors {

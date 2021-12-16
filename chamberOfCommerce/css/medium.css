@@ -142,18 +142,16 @@
   }
 
   /*---------------------  MAIN CONTACT ---------------------*/
-  .iframe-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .directors {
+  .directors,
+  .iframe-wrapper {
     display: flex;
     justify-content: center;
   }
 
-  .directors h3 {
+  .directors h3,
+  .iframe-wrapper h3 {
+    width: 15rem;
     border-bottom: none;
     border-right: solid 3px var(--font-light);
   }
