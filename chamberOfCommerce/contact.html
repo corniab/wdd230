@@ -29,7 +29,33 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+      <main class="main-contact">
+        <!-- name, phone, and email with, of course, a comment. -->
+        <form action="confirmation.html" method="get">
+          <h2>Contact Us</h2>
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label class="top"
+              >Full Name* <input type="text" name="full-name" required
+            /></label>
+
+            <label class="top">Title <input type="text" name="title" /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              >Cell Phone <input type="tel" name="phone"
+            /></label>
+          </fieldset>
+          <input type="submit" value="Join the Chamber" id="submitBtn" />
+        </form>
+      </main>
       <footer>
         <div class="resources">
           <h4>Resources</h4>
