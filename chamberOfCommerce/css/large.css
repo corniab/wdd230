@@ -135,5 +135,29 @@
   .main-city section {
     margin-top: 2rem;
   }
-  /*---------------------  DIRECTORY MAIN ---------------------*/
+  /*---------------------  CONTACT MAIN ---------------------*/
+  .main-contact {
+    display: grid;
+    grid-template-areas:
+      "form map"
+      "form map"
+      "directors directors";
+    grid-template-columns: 4fr 1fr;
+    justify-content: center;
+  }
+
+  .main-contact form {
+    grid-area: form;
+  }
+
+  .iframe-wrapper {
+    grid-area: map;
+    height: 100%;
+    width: min-content;
+    margin-right: 3rem;
+  }
+
+  .directors {
+    grid-area: directors;
+  }
 }
