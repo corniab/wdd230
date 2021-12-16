@@ -34,6 +34,7 @@ function createCards(data) {
         let cityLi = document.createElement("li")
         cityLi.textContent = business.city
         
+        // append li to ul
         addressUl.append(nameLi, addressLi, cityLi)
 
         let contactH3 = document.createElement("h3")
@@ -43,7 +44,15 @@ function createCards(data) {
         let phoneLi = document.createElement("li")
         phoneLi = business.phone
 
-        let email
+        let emailLi = document.createElement("li")
+        emailLi.textContent = business.emailLi
+
+        // append li to ul
+        contactUl.append(phoneLi, emailLi)
+
+
+        // append img, h3, ul to div
+        businessInfo.append(logo, addressH3, addressUl, contactH3, contactUl)
 
         
     })
