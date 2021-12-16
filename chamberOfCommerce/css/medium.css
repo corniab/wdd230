@@ -140,4 +140,21 @@
   .activate-list {
     grid-template-columns: auto;
   }
+
+  /*---------------------  MAIN CONTACT ---------------------*/
+  .iframe-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .directors {
+    display: flex;
+    justify-content: center;
+  }
+
+  .directors h3 {
+    border-bottom: none;
+    border-right: solid 3px var(--font-light);
+  }
 }
