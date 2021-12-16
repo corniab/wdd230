@@ -19,13 +19,13 @@ function createCards(data) {
         logo.alt = `logo for ${business.name}`
 
         let businessInfo = document.createElement("div")
-        businessInfo.className = "business-info"
+        businessInfo.className = "business-card"
 
         let addressH3 = document.createElement("h3")
         addressH3.textContent = "Address"
 
         let addressUl = document.createElement("ul")
-        let nameLi = document("li")
+        let nameLi = document.createElement("li")
         nameLi.textContent = business.name
 
         let addressLi = document.createElement("li") 
@@ -42,10 +42,10 @@ function createCards(data) {
 
         let contactUl = document.createElement("ul")
         let phoneLi = document.createElement("li")
-        phoneLi = business.phone
+        phoneLi.textContent = business.phone
 
         let emailLi = document.createElement("li")
-        emailLi.textContent = business.emailLi
+        emailLi.textContent = business.email
 
         // append li to ul
         contactUl.append(phoneLi, emailLi)
@@ -53,6 +53,9 @@ function createCards(data) {
 
         // append img, h3, ul to div
         businessInfo.append(logo, addressH3, addressUl, contactH3, contactUl)
+
+        //append to main
+        main.append(businessInfo)
 
         
     })

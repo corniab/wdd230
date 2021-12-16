@@ -433,3 +433,31 @@ fieldset {
   background-color: var(--accent-1);
   margin-top: 5rem;
 }
+
+/*---------------------  Directory ---------------------*/
+.main-directory {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1rem;
+  gap: 1rem 1rem;
+  justify-items: center;
+}
+
+.business-card {
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.business-card ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.business-card h3 {
+  margin-bottom: 0.2rem;
+}
+
+.business-card img {
+  min-width: 100px;
+}
