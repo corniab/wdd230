@@ -437,7 +437,7 @@ fieldset {
 /*---------------------  Directory ---------------------*/
 .main-directory {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   margin-top: 1rem;
   gap: 1rem 1rem;
   justify-items: center;
@@ -465,8 +465,4 @@ fieldset {
 
 #toggle-grid {
   display: none;
-}
-
-.activate-list {
-  grid-template-columns: auto;
 }

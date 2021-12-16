@@ -136,7 +136,4 @@
     margin-top: 2rem;
   }
   /*---------------------  DIRECTORY MAIN ---------------------*/
-  .activate-grid {
-    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-  }
 }

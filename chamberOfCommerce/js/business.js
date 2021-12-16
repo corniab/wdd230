@@ -63,10 +63,7 @@ function createCards(data) {
 
 // toggle grid and list
 const mainDirectory = document.querySelector(".main-directory")
-const grid = document.getElementById("grid")
 const list = document.getElementById("list")
-
-grid.addEventListener('click', () => {mainDirectory.classList.toggle('activate-grid'), false})
 
 list.addEventListener('click', () => {mainDirectory.classList.toggle('activate-list'), false})
 
