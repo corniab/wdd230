@@ -116,4 +116,32 @@
   .demographics .city-content {
     flex-direction: row-reverse;
   }
+
+  /*---------------------  DIRECTORY MAIN ---------------------*/
+
+  #toggle-grid {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  #grid {
+    padding: 1rem;
+  }
+
+  #list {
+    padding: 1rem;
+  }
+
+  #toggle-grid img {
+    height: 30px;
+  }
+
+  .activate-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .activate-list {
+    grid-template-columns: auto;
+  }
 }

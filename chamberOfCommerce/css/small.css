@@ -437,7 +437,7 @@ fieldset {
 /*---------------------  Directory ---------------------*/
 .main-directory {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 1rem;
   gap: 1rem 1rem;
   justify-items: center;
@@ -459,5 +459,14 @@ fieldset {
 }
 
 .business-card img {
-  min-width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+#toggle-grid {
+  display: none;
+}
+
+.activate-list {
+  grid-template-columns: auto;
 }
