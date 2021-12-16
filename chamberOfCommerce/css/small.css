@@ -114,7 +114,7 @@ h4 {
   color: var(--font-light);
   font-size: 1.5rem;
   background: none;
-  border: solid var(--font-light) 5px;
+  border: solid var(--background-light) 5px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -122,6 +122,13 @@ h4 {
   justify-self: center;
   width: 80%;
   margin: 0.5em;
+  transition: 0.3s;
+}
+
+#join-btn:hover {
+  background-color: var(--background-light);
+  color: var(--font-dark);
+  box-shadow: 2px 2px 2px var(--background-dark);
 }
 
 /*---------------------  WRAPPER ---------------------*/
