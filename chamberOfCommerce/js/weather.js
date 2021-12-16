@@ -20,7 +20,6 @@ fetch(url).then(response => response.json())
 
 function createForecast(data) {
     //update current conditions
-    console.log(data)
     let current = data.current  
     heroTemp.innerHTML = `${Math.round(current.temp)}&deg;F`
     heroHumidity.innerHTML = `${current.humidity}%`
